@@ -21,17 +21,20 @@
     >
       <!-- Home Screen -->
       <section
-        class="home min-h-screen text-white flex flex-col justify-center items-center hidden"
+        id="home-screen"
+        class="min-h-screen text-white flex justify-center items-center"
       >
         <div class="flex flex-col items-center gap-10">
           <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="btn bg-white text-black">Play Now</button>
+          <button onclick="play()" class="btn bg-white text-black">
+            Play Now
+          </button>
         </div>
       </section>
       <!-- Play Ground start -->
 
-      <section class="play-ground">
+      <section id="play-ground" class="hidden">
         <!-- play ground container -->
         <div class="flex flex-col items-center gap-20 pt-20">
           <!-- screen -->
@@ -86,7 +89,7 @@
           </div>
           <!-- keyboard end -->
           <!-- life score -->
-          <div class="flex justify-between w-[600px] ">
+          <div class="flex justify-between w-[600px]">
             <button class="btn rounded-full bg-pink-300 text-white px-4">
               Life
               <img src="Group 23.svg" alt="" />
@@ -100,8 +103,25 @@
           </div>
         </div>
       </section>
-      <!-- Play ground end -->
-      <section class="score"></section>
+      <!-- Play 
+        \ground end -->
+      <!-- final Score start -->
+      <section
+        class="score flex justify-center items-center min-h-screen hidden"
+      >
+        <div
+          class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg"
+        >
+          <h1 class="text-8xl">
+            <span class="font-extrabold">Score:</span>
+            <span>14</span>
+          </h1>
+          <button class="btn bg-white">Play Again</button>
+          <p>Practice will make you A Pro</p>
+        </div>
+      </section>
     </main>
+    <script src="script/utility.js"></script>
+    <script src="script/alpha-clash.js"></script>
   </body>
 </html>
