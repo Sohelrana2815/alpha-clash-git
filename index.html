@@ -115,6 +115,7 @@
 
           <!-- start life and score-->
           <div class="flex justify-between w-[1000px] h-[660px]">
+            <!-- Life display -->
             <button
               class="btn w-40 h-14 bg-fuchsia-800 rounded-[30px] text-white border-none"
             >
@@ -125,10 +126,12 @@
               </p>
               <img src="svg/heart.svg" alt="" />
               <span
+                id="current-life"
                 class="text-center text-white text-xl font-medium font-['Inter'] leading-normal"
-                >1</span
+                >5</span
               >
             </button>
+            <!-- Score display -->
             <button
               class="btn w-[170px] h-14 bg-violet-900 rounded-[30px] text-white border-none"
             >
@@ -139,8 +142,9 @@
               </p>
               <img src="svg/life.svg" alt="" />
               <span
+                id="current-score"
                 class="text-center text-white text-xl font-medium font-['Inter'] leading-normal"
-                >1</span
+                >0</span
               >
             </button>
           </div>
