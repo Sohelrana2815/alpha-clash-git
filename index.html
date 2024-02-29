@@ -29,8 +29,12 @@
       >
         <div class="flex flex-col items-center gap-8">
           <h1 class="text-8xl font-anton uppercase">ALPHABET CLASH</h1>
-          <p class="font-medium text-xl">
-            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          <h1 class="text-2xl font-poppins uppercase">
+            Created by : Sohel Rana moon
+          </h1>
+
+          <p class="font-normal font-poppins uppercase text-xl">
+            Press Enter to Play
           </p>
           <button
             onclick="playNow()"
@@ -154,20 +158,23 @@
       </section>
       <!-- end playground -->
       <!-- start score section -->
-      <section class="score hidden">
+      <section id="final-score" class="hidden">
         <div class="flex justify-center items-center min-h-screen text-center">
           <div class="space-y-6 bg-[#FFFFFF33] rounded-2xl px-12 py-101">
+            <h3 class="text-3xl text-white">Game Over !</h3>
             <h1>
               <span
                 class="text-white text-[64px] font-extrabold font-['Poppins'] leading-[76.80px]"
                 >Score:
               </span>
               <span
+              id="last-score"
                 class="text-white text-[64px] font-extrabold font-['Poppins'] leading-[76.80px]"
                 >14</span
               >
             </h1>
             <button
+              onclick="playNow()"
               class="btn w-[175px] h-[61px] px-8 py-4 bg-white rounded-lg text-gray-950 text-xl font-semibold font-['Poppins'] leading-[28.80px]"
             >
               Play Again
